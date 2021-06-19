@@ -11,17 +11,21 @@
   <div class="container">
     <h1>Programming Language Suggester</h1>
     <h3>Are you still having a hard time choosing which programming language you should study? Fill up this survey! We will help you to choose between Ruby, C#, and Python!</h3>
+<!-- User input their names used: radio -->
     <form id="suggester">
       <div class="form-group">
         <label for="name">Your name:</label>
         <input id="name" class="form-control" type="text">
       </div>
+<!-- First survey question used: radio -->
       <p>How would you like the speed of coding?</p>
+
       <div class="firstQuestion">
         <label>
           <input type="radio" name="codingSpeed" value="complex" checked>
           Complex syntax but it has solutions to reduce the amount of code in bigger apps.
         </label>
+
       </div>
         <div class="firstQuestion">
         <label>
@@ -29,43 +33,61 @@
           Very fast and intutive. However, it's better for small apps.
         </label>
       </div>
+<!-- Second survey question used: radio -->
       <p>How would you like the programming language to perform?</p>
+
       <div class="secondQuestion">
         <label>
           <input type="radio" name="performance" value="largeApplication" checked>
           Very good even in large applications.
         </label>
       </div>
+
       <div class="secondQuestion">
         <label>
           <input type="radio" name="performance" value="interpretive">
           Interpretive language. Slow processing time.
         </label>
       </div>
+<!-- Third survey question used: radio -->
       <p>Which coding program you want to use to code?</p>
+
       <div class="thirdQuestion">
         <label>
           <input type="radio" name="program" value="visualStudio" checked>
           Visual Studio Code
         </label>
       </div>  
+
       <div class="thirdQuestion">
         <label>
           <input type="radio" name="program" value="aptanaStudio">
           Aptana Studio
         </label>
       </div>
+<!-- Fourth survey question used: select box -->
       <p>Do you know what you want to create?</p>
+
       <select class="form-control" id="whatToCreate">
         <option value="website">Websites</option>
         <option value="webApplication">Web Applications</option>
       </select>
+<!-- Fifth survey question used: select box -->
       <p>What other feature do you want the programming language to have?</p>
+
       <select class="form-control" id="feature">
         <option value="easyToLearn">Relatively easy to learn</option>
         <option value="popular">Popular, not going away anytime soon</option>
         <option value="powerful">Powerful enough to build serious desktop applications</option>
       </select>
+
     </form>
   </div>
+
+  <div class="container">
+    <div id="cSharp">
+      <p>According to the survey. We recommend you to study <strong>C#</strong>!</p>
+    </div>
+  </div>
+
 </body>
