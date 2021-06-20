@@ -3,6 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     const personName = $("input#name").val();
     const codingSpeed = $("input:radio[name=codingSpeed]:checked").val();
+    const performance = $("input:radio[name=performance]:checked").val();
 
   });
 });
