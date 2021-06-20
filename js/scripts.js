@@ -6,5 +6,6 @@ $(document).ready(function() {
     const performance = $("input:radio[name=performance]:checked").val();
     const program = $("input:radio[name=program]:checked").val();
     const whatToCreate =$("#whatToCreate").val();
+    const feature =$("#feature").val();
   });
 });
