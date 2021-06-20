@@ -22,7 +22,7 @@ $(document).ready(function() {
       });
       $(".name").text(personName);
       $("#cSharpRuby").show();
-    }else if (codingSpeed === "complex" && performance === "largeApplication" && program === "apatanaStudio") {
+    }else if (codingSpeed === "complex" && performance === "largeApplication" && program === "aptanaStudio") {
       $("button").click(function() {
         $("p").removeId();
         $("p").addId("python");
@@ -36,13 +36,13 @@ $(document).ready(function() {
       });
       $(".name").text(personName);
       $("#python").show();
-    } else if (codingSpeed === "fast" && performance === "interpretive" && program === "apatanaStudio") {
+    } else if (codingSpeed === "fast" && performance === "interpretive" && program === "aptanaStudio") {
       $("button").click(function() {
         $("p").removeId();
-        $("p").addId("codingProgram");
+        $("p").addId("codeProgram");
       });
       $(".name").text(personName);
-      $("#codingProgram").show();
+      $("#codeProgram").show();
     }else if (codingSpeed === "fast" && performance === "interpretive" && program === "visualStudio") {
       $("button").click(function() {
         $("p").removeId();
@@ -50,20 +50,13 @@ $(document).ready(function() {
       });
       $(".name").text(personName);
       $("#pythonRuby").show();
-    }else if (codingSpeed === "complex" && performance === "interpretive" && program === "apatanaStudio") {
+    }else if (codingSpeed === "complex" && performance === "interpretive" && program === "aptanaStudio") {
       $("button").click(function() {
         $("p").removeId();
         $("p").addId("ruby");
       });
       $(".name").text(personName);
       $("#ruby").show();
-    }else if (codingSpeed === "fast" && performance === "largeApplication" && program === "apatanaStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("python");
-      });
-      $(".name").text(personName);
-      $("#python").show();
     }else {
       $("button").click(function() {
         $("p").removeId();
