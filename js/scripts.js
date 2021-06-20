@@ -4,6 +4,6 @@ $(document).ready(function() {
     const personName = $("input#name").val();
     const codingSpeed = $("input:radio[name=codingSpeed]:checked").val();
     const performance = $("input:radio[name=performance]:checked").val();
-
+    const program = $("input:radio[name=program]:checked").val();
   });
 });
