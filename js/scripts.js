@@ -1,3 +1,27 @@
+function replace(num) {
+  $("#cSharp").hide();
+  $("#cSharpRuby").hide();
+  $("#python").hide();
+  $("#codeProgram").hide();
+  $("#pythonRuby").hide();
+  $("#ruby").hide();
+
+  if (num===1){
+    $("#cSharp").show();
+  }else if (num===2) {
+    $("#cSharpRuby").show();
+  }else if (num===3) {
+    $("#python").show();
+  }else if (num===4) {
+    $("#codeProgram").show();
+  }else if (num===5) {
+    $("#pythonRuby").show();
+  }else {
+    $("#ruby").show();
+  }
+}
+
+
 $(document).ready(function() {
   $("#suggester").submit(function(event) {
     event.preventDefault();
@@ -9,61 +33,29 @@ $(document).ready(function() {
     const feature =$("#feature").val();
 
     if (codingSpeed === "complex" && performance === "largeApplication" && program === "visualStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("cSharp");
-      });
       $(".name").text(personName);
-      $("#cSharp").show();
+      replace(1);
     }else if (codingSpeed === "complex" && performance === "interpretive" && program === "visualStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("cSharpRuby");
-      });
       $(".name").text(personName);
-      $("#cSharpRuby").show();
+      replace(2);
     }else if (codingSpeed === "complex" && performance === "largeApplication" && program === "aptanaStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("python");
-      });
       $(".name").text(personName);
-      $("#python").show();
+      replace(3)
     }else if (codingSpeed === "fast" && performance === "largeApplication" && program === "visualStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("python");
-      });
       $(".name").text(personName);
-      $("#python").show();
+      replace(3);
     } else if (codingSpeed === "fast" && performance === "interpretive" && program === "aptanaStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("codeProgram");
-      });
       $(".name").text(personName);
-      $("#codeProgram").show();
+      replace(4);
     }else if (codingSpeed === "fast" && performance === "interpretive" && program === "visualStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("pythonRuby");
-      });
       $(".name").text(personName);
-      $("#pythonRuby").show();
+      replace(5);
     }else if (codingSpeed === "complex" && performance === "interpretive" && program === "aptanaStudio") {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("ruby");
-      });
       $(".name").text(personName);
-      $("#ruby").show();
+      replace(6);
     }else {
-      $("button").click(function() {
-        $("p").removeId();
-        $("p").addId("pythonRuby");
-      });
       $(".name").text(personName);
-      $("#pythonRuby").show();
+      replace(5);
     }
   });
 });
